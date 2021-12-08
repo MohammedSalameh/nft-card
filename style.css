@@ -30,13 +30,14 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
+
 .container {
 	background-color: var(--card-color);
-	width: 350px;
+	width: 360px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 0.5rem;
+	border-radius: 0.2rem;
 }
 
 .card {
@@ -46,7 +47,8 @@ body {
 	padding: 20px;
 }
 
-h3 {
+.title {
+	font-size: 1.1rem;
 	font-weight: 300;
 	color: var(--white);
 }
@@ -62,7 +64,7 @@ h3 {
 .card-img {
 	width: 100%;
 	height: auto;
-	border-radius: 0.5rem;
+	border-radius: 0.3rem;
 }
 
 .info-text {
@@ -71,7 +73,7 @@ h3 {
 }
 
 .price-amount {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 	color: var(--white);
 	text-align: center;
