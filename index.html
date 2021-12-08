@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | NFT preview card component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+			:root {
+				--primary-color: hsl(217, 54%, 11%);
+				--card-color: hsl(216, 50%, 16%);
+				--line-color: hsl(215, 32%, 27%);
+				--white: hsl(0, 0%, 100%);
+				--soft-blue: hsl(215, 51%, 70%);
+				--senary-color: #fff;
+				--cyan: hsl(178, 100%, 50%);
+			}
+
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-size: 18px;
+				font-family: Outfit, sans-serif;
+				color: var(--soft-blue);
+				background-color: var(--primary-color);
+			}
+
+			.wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100vw;
+				height: 100vh;
+			}
+			.container {
+				background-color: var(--card-color);
+				width: 350px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 0.5rem;
+			}
+
+			.card {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 20px;
+			}
+
+			h3 {
+				font-weight: 300;
+				color: var(--white);
+			}
+
+			.flex {
+				display: flex;
+			}
+
+			.space-between {
+				justify-content: space-between;
+			}
+
+			.card-img {
+				width: 100%;
+				height: auto;
+				border-radius: 0.5rem;
+			}
+
+			.info-text {
+				font-size: 1.1rem;
+				font-weight: 300;
+			}
+
+			.price-amount {
+				font-size: 1rem;
+				font-weight: 600;
+				color: var(--white);
+				text-align: center;
+			}
+
+			.price-container,
+			.time-container {
+				align-items: center;
+			}
+
+			.price-icon,
+			.time-icon {
+				margin-right: 0.5rem;
+			}
+
+			.price-amount,
+			.time-text {
+				font-weight: 400;
+				font-size: 0.9rem;
+			}
+
+			.price-amount {
+				color: var(--cyan);
+			}
+
+			hr {
+				width: 100%;
+				border: solid 1px var(--line-color);
+			}
+
+			.creator-container {
+				display: flex;
+				align-items: center;
+				font-weight: 300;
+			}
+
+			.creator-img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				border: 0.1rem solid var(--white);
+				margin-right: 0.5rem;
+			}
+
+			strong {
+				color: var(--white);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="card">
+					<img
+						src="/images/image-equilibrium.jpg"
+						alt="sphere"
+						class="card-img"
+					/>
+					<h3>Equilibrium #3429</h3>
+					<p class="info-text">
+						Our Equilibrium collection promotes balance and calm.
+					</p>
+					<div class="flex space-between">
+						<div class="flex price-container">
+							<img
+								class="price-icon"
+								src="/images/icon-ethereum.svg"
+								alt="ethereum icon"
+							/>
+							<p class="price-amount">0.041 ETH</p>
+						</div>
+
+						<div class="flex time-container">
+							<img
+								class="time-icon"
+								src="/images/icon-clock.svg"
+								alt="clock icon"
+							/>
+							<p class="time-text">3 days left</p>
+						</div>
+					</div>
+					<hr />
+					<div class="flex creator-container">
+						<img
+							class="creator-img"
+							src="/images/image-avatar.png"
+							alt="creator avatar"
+						/>
+						<p class="creator-text">
+							Creation of <strong>Jules Wyvern</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
